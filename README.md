@@ -4,7 +4,7 @@ This is the complete set of assets/sources to make your own Bitcoin Rollercoaste
 
 Please follow the guidelines below to build and setup the toy. Have fun on the Bitcoin rollercoaster!
 
-Any donations to this address will be much appreciated: 1LAJ6Aa1gvv5B4MRmAoizPNHKHsTvC9iGt
+Any donations to this address will be much appreciated: <b>1LAJ6Aa1gvv5B4MRmAoizPNHKHsTvC9iGt</b>
 
 ## Parts
 
