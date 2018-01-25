@@ -28,12 +28,17 @@ For the parts that I designed, I provided Autodesk Fusion 360 (free) source file
 I'm gonna have to come back and maybe add a diagram, but here are the connections than need to be made on the MCU/screen/servo
 
 ESP8266 D1 -> OLED SCL
+
 ESP8266 D2 -> OLED SDA
+
 ESP8266 3.3v -> OLED VCC
+
 ESP8266 GND -> OLED GND
 
 ESP8266 5v -> Servo +
+
 ESP8266 GND -> Servo GND
+
 ESP8266 D7 -> Servo Signal
 
 ## Software
@@ -42,7 +47,13 @@ The MCU we're working with is very nice in that it has onboard USB, so you can r
 
 The code is using some libraries you can download from their respective websites, or from the included archive.
 
-More details TBD
+The most magic is coming from WiFi manager (https://github.com/tzapu/WiFiManager). This awesome library allows for user friendly wi-fi setup on MCU without even needing a screen or buttons. 
+
+The rest are standard Adafruit GFX, Servo, ArduinoJson as well as ESP8266.
+
+I included two classes for network implementation. One works with Coinbase API and the other one is for Coindesk. Feel free to add your own. As long as they have the same API you won't need to change the main code.
+
+Please also find `config.h` where you can provide some configuration items for the toy. One of them worth mentioning is `MECHANICAL_OFFSET`. Remember when I said the platform doesn't need to be exacly level at zero? This is the value that will help you correct that. Experiment and set positive or negative offset in degrees until the cart is level.
 
 ## How to assemble
 
