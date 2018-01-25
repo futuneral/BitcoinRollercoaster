@@ -49,7 +49,7 @@ The code is using some libraries you can download from their respective websites
 
 The most magic is coming from WiFi manager (https://github.com/tzapu/WiFiManager). This awesome library allows for user friendly wi-fi setup on MCU without even needing a screen or buttons. 
 
-The rest are standard Adafruit GFX, Servo, ArduinoJson as well as ESP8266.
+The rest are standard Adafruit GFX, Servo, ArduinoJson as well as standard ESP8266 libraries.
 
 I included two classes for network implementation. One works with Coinbase API and the other one is for Coindesk. Feel free to add your own. As long as they have the same API you won't need to change the main code.
 
